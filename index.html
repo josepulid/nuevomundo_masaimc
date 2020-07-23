@@ -8,8 +8,47 @@
         alert("hola mundo");
         alert("adios mundo");
     </script>
+
 </head>
 <body>
+  
+<script>
+    var cuenta={
+        titular: "jose",
+        saldo: 0,
+        ingresar: function(cantidad){
+        console.log("depositaste" + cantidad + "efectivo");
+        return this.saldo += cantidad;
+      },
+      extraer: function(){
+          console.log("retiraste" +cantidad + "efectivo");
+          return this.saldo += cantidad;
+      },
+
+
+       informar: function(){"nombre del titular:" + this.titular + "saldo que pasa";
+    }
+    }
+    
+    
+
+</script>
+
+
+<script> 
+
+
+
+
+
+
+
+
+
+
+    
+  
+
     <h1>Masa Corporal IMC = peso / altura</h1>
     <script>
 
@@ -27,5 +66,31 @@
 
 
     </script>
+    <script >
+        let parada =prompt ( "en que numero me dengo:")
+    for (var index = 1;index <= parada; index++){
+        if(index % 2 === 0){
+            console.log(index + "es par");
+            }else{
+                console.log(index +"es impar");
+            }
+
+    }
+    
+        </script>
+<script>
+ <label for="num">Introduce un número: </label>
+    <input type="text" name="" id="num">
+
+    <button onclick="multi()">MULTIPLICACIÓN</button>
+
+    <p id="multi"></p>
+
+    <script src="main.js"></script>
+
+</script>
+
+
+
 </body>
 </html>
