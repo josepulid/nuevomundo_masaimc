@@ -4,38 +4,45 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>hola</title>
+     
     <script>
         alert("hola mundo");
         alert("adios mundo");
     </script>
-
 </head>
 <body>
-  
+
+
+
+
 <script>
+
     var cuenta={
-        titular: "jose",
+        titular: "Jose",
         saldo: 0,
-        ingresar: function(cantidad){
-        console.log("depositaste" + cantidad + "efectivo");
-        return this.saldo += cantidad;
-      },
-      extraer: function(){
-          console.log("retiraste" +cantidad + "efectivo");
-          return this.saldo += cantidad;
-      },
 
 
-       informar: function(){"nombre del titular:" + this.titular + "saldo que pasa";
+    ingresar: function(cantidad){
+        console.log("has ingresado" + cantidad + "pesos");
+        return this.saldo += cantidad
+
+    },
+     extraer: function(cantidad){
+         console.log("retiraste" + cantidad + "pesos");
+         return this.saldo -= cantidad;
+     },
+     informar:function(){
+         return"nombre del titular:"+ this.titular +" el saldo actual"
+     }
+
+
+
     }
-    }
-    
-    
+
 
 </script>
 
 
-<script> 
 
 
 
@@ -45,12 +52,11 @@
 
 
 
+>
+<script>
 
     
-  
-
-    <h1>Masa Corporal IMC = peso / altura</h1>
-    <script>
+    
 
    peso=prompt("Dame tu peso en kilos");  
 
@@ -59,15 +65,19 @@
 
    indice=peso/altura;  
 
-   document.write("Tu índice de masa corporal es  ");  
+   document.write("Tu   masa corporal es  ");  
 
    document.write(indice);  
-
-
-
+   
     </script>
+    
+    
+    
+    
     <script >
-        let parada =prompt ( "en que numero me dengo:")
+
+
+        let parada =prompt ( "en que numero me detengo:")
     for (var index = 1;index <= parada; index++){
         if(index % 2 === 0){
             console.log(index + "es par");
@@ -78,15 +88,12 @@
     }
     
         </script>
-<script>
- <label for="num">Introduce un número: </label>
-    <input type="text" name="" id="num">
 
-    <button onclick="multi()">MULTIPLICACIÓN</button>
 
-    <p id="multi"></p>
 
-    <script src="main.js"></script>
+
+
+
 
 </script>
 
